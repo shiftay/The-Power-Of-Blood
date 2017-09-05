@@ -19,7 +19,9 @@ class ARENA_API UMyBlueprintFunctionLibrary : public UBlueprintFunctionLibrary
 
 	UFUNCTION(BlueprintPure, Category = "save")
 		static bool FileLoadString(FString FileNameA, FString& SaveTextA);
-	
+
+	UFUNCTION(BlueprintCallable, Category = "save")
+		static FString ROT47(FString StringTest);
 	
 	
 };
